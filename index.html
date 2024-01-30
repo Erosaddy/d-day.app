@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="d-day app">
+    <meta property="og:site_name" content="우리만난지">
+    <meta property="og:url" content="insert URL here">
+    <meta property="og:description" content="디데이 입력하면 경과일수 알려줘용">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+
+    <title>우리만난지...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ48H8LPMC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJ48H8LPMC');
+</script>
+</head>
+<body>
+    <h1 class="d-none">d-day counter | 디데이 계산기</h1>
+    <header>
+        <h2 class="text-center py-2">우리만난지</h2>
+    </header>
+    <main>
+        <form autocomplete="off" id="dday_form">
+            <div class="text-center">
+                    <img src="images/ring_with_diamond.png" alt="커플링">
+                </div>
+                <!-- 구글 광고를 붙일 예정..-->
+            <div class="design_form">
+                <div class="first_date">
+                    <p>사귄 날짜를 입력하세요 (ex.20240101)</p>
+                    <input type="date" id="first_date" required>
+                </div>
+                <div class="user_names">
+                    <p>이름을 입력하세요</p>
+                    <input type="text" id="man_name" required>
+                    <input type="text" id="woman_name" required>
+                </div>
+                
+                <button id="calc_btn">우리 만난지 며칠째?</button>
+            </div>
+        </form>
+    </main>
+    <div id="result" class="d-none">
+        <span id="name1"></span>♥<span id="name2"></span>
+        <p>우리 만난지 <span id="passedDay"></span>일 째</p>
+        <img src="images/couple.png" alt="커플이미지">
+        <p><span id="inputDay"></span>부터 사귀기 시작해서</p>
+        <p>300일 까지 <span id="special1"></span>일 남았어요!</p>
+        <p>1주년 까지 <span id="special2"></span>일 남았어요!</p>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
