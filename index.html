@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +13,17 @@
 
     <title>우리만난지...</title>
     <link rel="stylesheet" href="css/style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ48H8LPMC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ48H8LPMC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-YJ48H8LPMC');
-</script>
+        gtag('config', 'G-YJ48H8LPMC');
+    </script>
 </head>
+
 <body>
     <h1 class="d-none">d-day counter | 디데이 계산기</h1>
     <header>
@@ -30,9 +32,9 @@
     <main>
         <form autocomplete="off" id="dday_form">
             <div class="text-center">
-                    <img src="images/ring_with_diamond.png" alt="커플링">
-                </div>
-                <!-- 구글 광고를 붙일 예정..-->
+                <img src="images/ring_with_diamond.png" alt="커플링">
+            </div>
+            <!-- 구글 광고를 붙일 예정..-->
             <div class="design_form text-center">
                 <div class="first_date">
                     <p>사귄 날짜를 입력하세요 (ex.20240101)</p>
@@ -43,7 +45,7 @@
                     <input type="text" id="man_name" required>
                     <input type="text" id="woman_name" required>
                 </div>
-                
+
                 <button id="calc_btn">우리 만난지 며칠째?</button>
             </div>
         </form>
@@ -59,4 +61,5 @@
     </div>
     <script src="script/main.js"></script>
 </body>
+
 </html>

@@ -34,23 +34,23 @@ dday_form.addEventListener("submit", function (e) {
     const friend = document.querySelector("#friend");
 
     // 친목질
-    let suhun = null, sanghun = null, jibeom = null;
-    if(man === "강수헌" | woman === "강수헌") {
-        suhun = "이상준님의 친구 강수헌님 안녕하세요!";
-    } 
-    if(man === "성상훈" | woman === "성상훈") {
-        sanghun = "이상준님의 친구 성상훈님 안녕하세요!";
-    } 
-    if(man === "서지범" | woman === "서지범") {
-        jibeom = "이상준님의 친구 서지범님 안녕하세요!";
-    }
-    let message = '';
-    message += suhun ? suhun : '';
-    message += sanghun ? sanghun : '';
-    message += jibeom ? jibeom : '';
+    var msg = new Array();
     
+    if(man === "강수헌" | woman === "강수헌") {
+        msg.push('강수헌');
+        } 
+    if(man === "성상훈" | woman === "성상훈") {
+        msg.push('성상훈');
+        } 
+    if(man === "서지범" | woman === "서지범") {
+        msg.push('서지범');
+        }
+    if(msg.length > 0) {
+        friend.innerText = "이상준의 친구 " + msg.join(', ') + "님 안녕하세요!"
+    }
+    console.log(msg)
     // Set the innerText of the friend element with the constructed message
-    friend.innerText = message;
+    //friend.innerText = msg ? msg : '';
     // #passDay DOM 조작
     passDay.innerText = passedTime;
     inputDay.innerText = userDate
